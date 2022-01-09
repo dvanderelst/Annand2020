@@ -8,6 +8,9 @@ from scipy.interpolate import interp1d
 from scipy import signal
 
 
+
+
+
 def my_model():
     full_model = keras.Sequential()
     input_layer = keras.layers.Dense(units=2, input_shape=(2,), activation='tanh')
@@ -16,7 +19,7 @@ def my_model():
 
     full_model.add(input_layer)
     # full_model.add(hidden_layer)
-    full_model.add(output_layer)
+    #full_model.add(output_layer)
 
     loss = keras.losses.MeanSquaredError()
     full_model.compile('RMSprop', loss=loss)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.4)  8 JAN 2022 14:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.4)  9 JAN 2022 09:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -34,6 +34,30 @@ LaTeX Info: Redefining \cite on input line 694.
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
 (/home/dieter/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count191
@@ -41,55 +65,97 @@ File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 17.
- [1
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
-{/home/dieter/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./ma
-in.bbl) [2] (./main.aux) ) 
+(/home/dieter/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count192
+\scratchdimen=\dimen141
+\scratchbox=\box51
+\nofMPsegments=\count193
+\nofMParguments=\count194
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count195
+\MPscratchDim=\dimen142
+\MPnumerator=\count196
+\makeMPintoPDFobject=\count197
+\everyMPtoPDFconversion=\toks18
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 18.
+
+[1
+
+{/home/dieter/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<neural_network.pdf, id=12, 816.97824pt x 325.45074pt>
+File: neural_network.pdf Graphic file (type pdf)
+<use neural_network.pdf>
+Package pdftex.def Info: neural_network.pdf  used on input line 43.
+(pdftex.def)             Requested size: 345.0pt x 137.43326pt.
+
+[2 <./neural_network.pdf>]
+<neural_network_0.pdf, id=43, 505.89pt x 361.35pt>
+File: neural_network_0.pdf Graphic file (type pdf)
+<use neural_network_0.pdf>
+Package pdftex.def Info: neural_network_0.pdf  used on input line 52.
+(pdftex.def)             Requested size: 345.0pt x 246.43153pt.
+ (./main.bbl [3 <./neural_network_0.pdf>]) [4]
+(./main.aux) ) 
 Here is how much of TeX's memory you used:
- 858 strings out of 478599
- 12660 string characters out of 5853099
- 312030 words of memory out of 5000000
- 18796 multiletter control sequences out of 15000+600000
+ 1669 strings out of 478599
+ 24358 string characters out of 5853099
+ 324455 words of memory out of 5000000
+ 19574 multiletter control sequences out of 15000+600000
  408191 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,5n,41p,722b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
-</home/dieter/texlive/2021/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx9.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti10.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (2 pages, 107189 bytes).
+ 57i,6n,66p,722b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
+</home/dieter/texlive/2021/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbx9.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmss10.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmss12.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb></home/dieter/texlive/2021/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmtt10.pfb>
+Output written on main.pdf (4 pages, 259765 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

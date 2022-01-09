@@ -1,6 +1,7 @@
 \documentclass[]{article}
 \usepackage{natbib}
 \usepackage{url}
+\usepackage{graphicx}
 
 %opening
 \title{}
@@ -37,6 +38,29 @@ In this letter, we present evidence to support our assessment of the task presen
 In this section, we analyze the task presented by \citet{Annand2020} to show that it consists of two independent tasks. There are multiple ways in which this could be demonstrated. However, as \citet{Annand2020} focus on learning, we show that an agent can perfectly solve the task by learning to decouple both controls.
 
 
+\begin{figure*}
+	\centering
+	\includegraphics[width=1\linewidth]{neural_network}
+	\caption{eqeqeqqqweqeweq}
+	\label{fig:neuralnetwork}
+\end{figure*}
+
+We use the neural network depicted in figure \ref{fig:neuralnetwork} as a learning agent. The network consists of two input neurons and two output neurons. The neurons have hyperbolic tangent activation functions. The network is trained to produce sinoid output signals $T_1$ and $T_2$ at output neurons $O_1$ and $O_2$, with $T_2$ shifted by 90 degrees with respect to $T_1$.
+
+\begin{figure*}
+	\centering
+	\includegraphics[width=1\linewidth]{neural_network_0}
+	\caption{qweqeqwewqe}
+	\label{fig:neuralnetwork0}
+\end{figure*}
+
+We trained the neural network to produce the desired output in response to various input signals ($S_1$, $S_2$, $S_3$, and $S4$, figure \ref{fig:neuralnetwork} ). The input signal for neuron $I_1$ is fixed to signal $S_1$, a sinoid wave with a length of 3 periods. Its phase was randomized for each training iteration, i.e., $\varphi_1 \sim [0^\circ, 360^\circ]$.
+
+We varied the input to neuron $I_2$ to demonstrate that the  task of \citet{Annand2020} consists of two independent subtasks. The input to $I_2$ could be either $S_2$, $S_3$, or $S_4$ (figure \ref{fig:neuralnetwork}).
+
+Signal $S_2$ was a sinoid with phase  $ \varphi_2 = \varphi_1 + 90^\circ$. Therefore, when presenting signals $S_1$ and $S_2$ to the neural network as input, we model the task as presented to participants by \citet{Annand2020}: a circular input (target location) has to be converted to a circular output (stylus location). 
+
+Converting $S_1$ and $S_2$ t
 
 
 
