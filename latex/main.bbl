@@ -1,0 +1,24 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Annand et~al.(2020)Annand, Grover, Silva, Holden, and
+  Riley]{Annand2020}
+Colin~T Annand, Francis~M Grover, Paula~L Silva, John~G Holden, and Michael~A
+  Riley.
+\newblock Early learning differences between intra-and interpersonal interlimb
+  coordination.
+\newblock \emph{Human Movement Science}, 73:\penalty0 102682, 2020.
+
+\bibitem[{Wikipedia contributors}(2021)]{EtchASketch}
+{Wikipedia contributors}.
+\newblock Etch a sketch --- {Wikipedia}{,} the free encyclopedia.
+\newblock
+  \url{https://en.wikipedia.org/w/index.php?title=Etch_A_Sketch&oldid=1046834319},
+  2021.
+\newblock [Online; accessed 8-January-2022].
+
+\end{thebibliography}

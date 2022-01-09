@@ -52,20 +52,20 @@ def scramble(array):
     return array
 
 
-def read_csv(filename):
+def read_csv(filename, start, end):
     data = pandas.read_csv(filename)
-    time_steps = numpy.arange(1, 59, 0.1)
+    time_steps = numpy.arange(start, end, 0.1)
 
-    f1 = interp1d(data.x, data.Curve1)
+    f1 = interp1d(data.x, data.Curve1, fill_value="extrapolate")
     Curve1 = f1(time_steps)
 
-    f2 = interp1d(data.x, data.Curve2)
+    f2 = interp1d(data.x, data.Curve2, fill_value="extrapolate")
     Curve2 = f2(time_steps)
 
-    f3 = interp1d(data.x, data.Curve3)
+    f3 = interp1d(data.x, data.Curve3, fill_value="extrapolate")
     Curve3 = f3(time_steps)
 
-    f4 = interp1d(data.x, data.Curve4)
+    f4 = interp1d(data.x, data.Curve4, fill_value="extrapolate")
     Curve4 = f4(time_steps)
 
     result = {'t': time_steps, 'x': Curve1, 'y': Curve2, 'tx': Curve3, 'ty': Curve4}
