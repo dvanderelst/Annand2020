@@ -27,7 +27,7 @@ def my_model():
     return full_model
 
 
-def wave(frequency=1, duration=10, fs=100, phase=0, plot=False):
+def wave(frequency=1, duration=10.0, fs=100, phase=0, plot=False):
     p = numpy.deg2rad(phase)
     points = numpy.arange(start=0, stop=duration, step=1 / fs)
     signal = 0.5 * numpy.sin(2 * numpy.pi * frequency * points + p)
@@ -39,7 +39,7 @@ def wave(frequency=1, duration=10, fs=100, phase=0, plot=False):
     return points, signal
 
 
-def waves(frequency=1,duration=10, phase0=False, offset=90):
+def waves(frequency=1,duration=10.0, phase0=False, offset=90):
     if not phase0: phase0 = numpy.random.randint(0, 360)
     p1, s1 = wave(frequency=frequency, duration=duration, phase=phase0)
     p2, s2 = wave(frequency=frequency, duration=duration, phase=phase0 + offset)
@@ -121,12 +121,23 @@ def smooth_signal(signal, samples, window='box'):
     smoothed = numpy.convolve(signal, w, mode='same')
     return smoothed
 
-# p1,s1 = wave(phase=0, duration=3)
-# p2,s2 = wave(phase=90, duration=3)
-#
-# s3 = scramble(s1)
-#
-# pyplot.plot(s1)
-# pyplot.plot(s2)
-# pyplot.plot(s3)
-# pyplot.show()
+def create_training_examples(frequency=3, n = 250):
+    inputs = []
+    outputs = []
+    for i in range(n):
+        data = waves(frequency=frequency, duration=0.251, phase0=False, offset=90)
+        input0 = data[0:13, 0]
+        output0 = data[13:, 0]
+
+        input1 = data[0:13, 1]
+        output1 = data[13:, 1]
+
+        input = numpy.concatenate((input0, input1))
+        output = numpy.concatenate((output0, output1))
+
+        inputs.append(input)
+        outputs.append(output)
+
+    inputs = numpy.array(inputs)
+    outputs = numpy.array(outputs)
+    return inputs, outputs
