@@ -17,7 +17,7 @@ def short_term_xcorr(y1,y2):
     n = len(y1)
     start = 0
     end = 30
-    shift = 10
+    shift = 1
     correlations = []
     while end < n:
         print(start, end)
@@ -37,7 +37,7 @@ def short_term_rms(y1,y2):
     n = len(y1)
     start = 0
     end = 30
-    shift = 10
+    shift = 1
     rms = []
     while end < n:
         print(start, end)

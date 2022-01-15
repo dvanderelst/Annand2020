@@ -1,5 +1,5 @@
 import numpy
-
+from matplotlib.lines import Line2D
 import Misc
 import CrossCorr
 from matplotlib import pyplot
@@ -44,15 +44,24 @@ rmss = [rms1, rms5, rms10, rms15, rms20]
 rms_ind = CrossCorr.short_term_rms(ind.dx, ind.dy)
 rms_dyad = CrossCorr.short_term_rms(dyad.dx, dyad.dy)
 # %%
+line1 = Line2D([0], [0], label='Analysis fig. 5', color='k', marker='s')
+line2 = Line2D([0], [0], label='Analysis fig. 7, ind.', color='k', marker='D', linestyle='none')
+line3 = Line2D([0], [0], label='Analysis fig. 7, dyad', color='k', marker='X', linestyle='none')
+handles = [line1, line2, line3]
+
+
+
 
 test = [rms_ind, xcor_ind, rms_dyad, xcor_dyad]
 
 trial_numbers = [1, 5, 10, 15, 20]
 
-pyplot.figure(figsize=(10, 5))
-pyplot.subplot(1, 2, 1)
-pyplot.plot(traces)
-pyplot.subplot(1, 2, 2)
+# pyplot.figure(figsize=(10, 5))
+# pyplot.subplot(1, 2, 1)
+# pyplot.plot(traces)
+# pyplot.subplot(1, 2, 2)
+
+pyplot.figure(figsize=(5, 3))
 pyplot.plot(trial_numbers, xcorrs, 'r', marker='s')
 pyplot.scatter(20.5, xcor_dyad, c='r', marker='D')
 pyplot.scatter(20.5, xcor_ind, c='r', marker='X')
@@ -68,5 +77,11 @@ ax.set_ylabel('Average short term RMSE', color='b')
 ax.set_xticks(trial_numbers)
 ax.set_xlabel('Trial Number')
 pyplot.tight_layout()
+
+pyplot.legend(handles=handles)
+
+output_file = 'latex/reanalysis.pdf'
+pyplot.savefig(output_file)
+
 pyplot.show()
 

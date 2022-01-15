@@ -6,7 +6,7 @@ import tensorflow as tf
 import pandas
 from scipy.interpolate import interp1d
 from scipy import signal
-
+from scipy.signal import windows
 
 
 
@@ -39,10 +39,10 @@ def wave(frequency=1, duration=10, fs=100, phase=0, plot=False):
     return points, signal
 
 
-def waves(duration=10, offset=90):
-    phase1 = numpy.random.randint(0, 360)
-    p1, s1 = wave(duration=duration, phase=phase1)
-    p2, s2 = wave(duration=duration, phase=phase1 + offset)
+def waves(frequency=1,duration=10, phase0=False, offset=90):
+    if not phase0: phase0 = numpy.random.randint(0, 360)
+    p1, s1 = wave(frequency=frequency, duration=duration, phase=phase0)
+    p2, s2 = wave(frequency=frequency, duration=duration, phase=phase0 + offset)
     w = [s1, s2]
     w = numpy.array(w)
     w = numpy.transpose(w)
@@ -110,6 +110,16 @@ def lag_finder(y1, y2, dt=0.1, plot=False):
         pyplot.show()
 
     return mx_corr, rms, delay, corr
+
+
+
+def smooth_signal(signal, samples, window='box'):
+    if window == 'box': w = windows.boxcar(samples)
+    if window == 'han': w = windows.hann(samples)
+    if window == 'flat': w = windows.flattop(samples)
+    w = w / numpy.sum(w)
+    smoothed = numpy.convolve(signal, w, mode='same')
+    return smoothed
 
 # p1,s1 = wave(phase=0, duration=3)
 # p2,s2 = wave(phase=90, duration=3)

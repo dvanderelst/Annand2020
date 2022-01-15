@@ -52,36 +52,34 @@ c2 = numpy.corrcoef(prediction[:, 1], waves[:, 1])
 c2 = c2[0, 1]
 
 #%%
-pyplot.figure(figsize=(7, 5))
+pyplot.figure(figsize=(9, 3))
 
-pyplot.subplot(2, 2, 1)
-pyplot.plot(waves[:,0], color=color1, alpha=0.5)
-pyplot.plot(waves[:,1], color=color2, alpha=0.5)
+pyplot.subplot(1, 3, 1)
+pyplot.plot(waves[:,0], color=color1)
+pyplot.plot(waves[:,1], color=color2)
 pyplot.legend(signal_labels, loc='upper left')
 pyplot.title('(a) Input (Selected example)')
 pyplot.xlabel('Sample number')
 pyplot.yticks([])
 
-pyplot.subplot(2, 2, 2)
-pyplot.plot(targets[:,0], color=color1, alpha=0.5)
-pyplot.plot(targets[:,1], color=color2, alpha=0.5)
-pyplot.title('(b) Target (Selected example)')
+pyplot.subplot(1, 3, 2)
+
+pyplot.plot(targets[:,0], color='k', linewidth=5)
+pyplot.plot(targets[:,1], color='k', linewidth=5)
+
+pyplot.plot(prediction[:,0], color=color1, linestyle='--')
+pyplot.plot(prediction[:,1], color=color2, linestyle='--')
+
+pyplot.title('(b) Learned output (Selected example)')
 pyplot.xlabel('Sample number')
 pyplot.yticks([])
 
-pyplot.subplot(2, 2, 3)
-pyplot.plot(prediction[:,0], color=color1, alpha=0.5)
-pyplot.plot(prediction[:,1], color=color2, alpha=0.5)
-pyplot.title('(c) Learned output (Selected example)')
-pyplot.xlabel('Sample number')
-pyplot.yticks([])
-
-pyplot.subplot(2, 2, 4)
-pyplot.imshow(weights, cmap='hot') #%Todo: set cm from -1 to 1
+pyplot.subplot(1, 3, 3)
+pyplot.imshow(weights, cmap='bwr',vmin=-1, vmax=1) #%Todo: set cm from -1 to 1
 pyplot.colorbar()
 pyplot.xticks([0,1], ['To Output 0', 'To Output 1'])
 pyplot.yticks([0,1], ['From Input 0', 'From Input 1'])
-pyplot.title('(d) Network Weights')
+pyplot.title('(c) Network Weights')
 #pyplot.title('Spatial representation (Selected example)')
 #time = numpy.arange(n)
 #pyplot.scatter(prediction[:,0],prediction[:,1], c=time, s=5, cmap='hot')
