@@ -27,7 +27,7 @@ training_history = network_model.fit(inputs, outputs, epochs=500)
 # %% Visualise output
 
 selected_example = 250
-pyplot.figure(figsize=(9, 3))
+pyplot.figure(figsize=(10, 2))
 
 for test_condition in [0, 1, 2]:
     test_inputs = inputs * 1.0
