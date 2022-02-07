@@ -100,7 +100,7 @@ with $p_{x,t}$ ($p_{x,t}$) the position of the stylus as controlled by the parti
 To assess the amount of coupling between the $X$ and $Y$ position of the stylus as a function of trial number, we analyze the error signals $\Delta x_i$ and $\Delta y_i$. The justification for is the demonstration (previous section) that perfect performance can not be interpreted as evidence for coupling between limbs or participants of a dyad. Alternatively, the errors could be be coupled. To assess this, we calculated the short term, normalized, cross correlation between $\Delta x_i$ and $\Delta y_i$,
 %
 \begin{equation}
-k_t = \max_t | \frac{\Delta x [t,t+3] \star \Delta y [t,t+3] }{\sqrt{(\Delta x [t,t+3]  \star \Delta x [t,t+3] )^2 \times (\Delta y [t,t+3]  \star \Delta y [t,t+3] )^2} } |
+k_t = \max_t \frac{| \Delta x [t,t+3] \star \Delta y [t,t+3] |}{\sqrt{(\Delta x [t,t+3]  \star \Delta x [t,t+3] )^2 \times (\Delta y [t,t+3]  \star \Delta y [t,t+3] )^2} }
 \label{eq:cross}
 \end{equation}
 %

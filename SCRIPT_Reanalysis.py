@@ -1,7 +1,7 @@
 import numpy
 from matplotlib.lines import Line2D
-import Misc
-import CrossCorr
+from library import Misc
+from library import CrossCorr
 from matplotlib import pyplot
 
 data1 = Misc.read_csv('digitize/trial1.csv', 0, 60)
@@ -23,15 +23,15 @@ traces = [tr1, tr5, tr10, tr15, tr20]
 traces = numpy.array(traces)
 traces = numpy.transpose(traces)
 # %% Get Short term xcorrs
-xcor1 = CrossCorr.short_term_xcorr(data1.dx, data1.dy)
-xcor5 = CrossCorr.short_term_xcorr(data5.dx, data5.dy)
-xcor10 = CrossCorr.short_term_xcorr(data10.dx, data10.dy)
-xcor15 = CrossCorr.short_term_xcorr(data15.dx, data15.dy)
-xcor20 = CrossCorr.short_term_xcorr(data20.dx, data20.dy)
+xcor1 = CrossCorr.short_term_xcorr(data1.dx, data1.dy, data1.tx, data1.ty)
+xcor5 = CrossCorr.short_term_xcorr(data5.dx, data5.dy, data5.tx, data5.ty)
+xcor10 = CrossCorr.short_term_xcorr(data10.dx, data10.dy, data10.tx, data10.ty)
+xcor15 = CrossCorr.short_term_xcorr(data15.dx, data15.dy, data15.tx, data15.ty)
+xcor20 = CrossCorr.short_term_xcorr(data20.dx, data20.dy, data20.tx, data20.ty)
 xcorrs = [xcor1, xcor5, xcor10, xcor15, xcor20]
 
-xcor_ind = CrossCorr.short_term_xcorr(ind.dx, ind.dy)
-xcor_dyad = CrossCorr.short_term_xcorr(dyad.dx, dyad.dy)
+xcor_ind = CrossCorr.short_term_xcorr(ind.dx, ind.dy, ind.tx, ind.ty)
+xcor_dyad = CrossCorr.short_term_xcorr(dyad.dx, dyad.dy,dyad.tx, dyad.ty )
 
 # %% Get Short term rms
 rms1 = CrossCorr.short_term_rms(data1.dx, data1.dy)
@@ -85,3 +85,11 @@ pyplot.savefig(output_file)
 
 pyplot.show()
 
+#%%
+pyplot.plot(data1.dx)
+pyplot.plot(data1.dy)
+pyplot.show()
+#
+# pyplot.plot(data20.dx)
+# pyplot.plot(data20.dy)
+# pyplot.show()

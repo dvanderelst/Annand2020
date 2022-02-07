@@ -121,16 +121,20 @@ def smooth_signal(signal, samples, window='box'):
     smoothed = numpy.convolve(signal, w, mode='same')
     return smoothed
 
-def create_training_examples(frequency=3, n = 250):
+
+
+def create_training_examples(frequency=3, input_samples=15, output_samples=15 , n = 250):
     inputs = []
     outputs = []
+    total_samples = input_samples + output_samples
+    required_duration = 1 + int(total_samples / 10)
     for i in range(n):
-        data = waves(frequency=frequency, duration=0.251, phase0=False, offset=90)
-        input0 = data[0:13, 0]
-        output0 = data[13:, 0]
+        data = waves(frequency=frequency, duration=required_duration, phase0=False, offset=90)
+        input0 = data[0:input_samples, 0]
+        output0 = data[input_samples:total_samples, 0]
 
-        input1 = data[0:13, 1]
-        output1 = data[13:, 1]
+        input1 = data[0:input_samples, 1]
+        output1 = data[input_samples:total_samples:, 1]
 
         input = numpy.concatenate((input0, input1))
         output = numpy.concatenate((output0, output1))
@@ -141,3 +145,24 @@ def create_training_examples(frequency=3, n = 250):
     inputs = numpy.array(inputs)
     outputs = numpy.array(outputs)
     return inputs, outputs
+
+# def create_training_examples(frequency=3, n = 250):
+#     inputs = []
+#     outputs = []
+#     for i in range(n):
+#         data = waves(frequency=frequency, duration=0.251, phase0=False, offset=90)
+#         input0 = data[0:13, 0]
+#         output0 = data[13:, 0]
+#
+#         input1 = data[0:13, 1]
+#         output1 = data[13:, 1]
+#
+#         input = numpy.concatenate((input0, input1))
+#         output = numpy.concatenate((output0, output1))
+#
+#         inputs.append(input)
+#         outputs.append(output)
+#
+#     inputs = numpy.array(inputs)
+#     outputs = numpy.array(outputs)
+#     return inputs, outputs

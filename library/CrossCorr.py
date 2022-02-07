@@ -13,10 +13,10 @@ def cross_correlate(y1, y2):
     return corr
 
 
-def short_term_xcorr(y1,y2):
-    n = len(y1)
+def short_term_xcorr(d1,d2, x, y):
+    n = len(d1)
     start = 0
-    end = 30
+    end = 10
     shift = 1
     correlations = []
     while end < n:
@@ -24,8 +24,9 @@ def short_term_xcorr(y1,y2):
         start = start + shift
         end = end+shift
 
-        c = cross_correlate(y1[start:end], y2[start:end])
+        c = cross_correlate(d1[start:end], d2[start:end])
         c = numpy.max(numpy.abs(c))
+        #c = numpy.max(c)
 
         correlations.append(c)
     correlations = numpy.array(correlations)
@@ -36,7 +37,7 @@ def short_term_xcorr(y1,y2):
 def short_term_rms(y1,y2):
     n = len(y1)
     start = 0
-    end = 30
+    end = 10
     shift = 1
     rms = []
     while end < n:

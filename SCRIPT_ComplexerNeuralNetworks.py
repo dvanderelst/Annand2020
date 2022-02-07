@@ -1,9 +1,9 @@
 import keras
 import numpy
 from matplotlib import pyplot
-
-import Misc
-import NetworkFunctions
+from library import Correction
+from library import Misc
+from library import NetworkFunctions
 
 pyplot.rcParams['text.usetex'] = True
 
@@ -12,16 +12,18 @@ color2 = '#91bfdb'
 apply_constraints = False
 training_examples = 500
 loss = keras.losses.MeanSquaredError()
+historic_samples = 15
+predicted_samples = 15
 
 # %% Train Network
 
 network_model = keras.Sequential()
 constraint = NetworkFunctions.weight_constraint(apply_constraints)
-input_layer = keras.layers.Dense(units=26, input_shape=(26,), activation='tanh', kernel_constraint=constraint)
+input_layer = keras.layers.Dense(units=predicted_samples * 2, input_shape=(historic_samples * 2,), activation='tanh', kernel_constraint=constraint)
 network_model.add(input_layer)
 network_model.compile('adam', loss=loss)
 
-inputs, outputs = Misc.create_training_examples(frequency=3, n=training_examples)
+inputs, outputs = Misc.create_training_examples(frequency=3, input_samples=historic_samples, output_samples=predicted_samples, n=training_examples)
 training_history = network_model.fit(inputs, outputs, epochs=500)
 
 # %% Visualise output
@@ -32,26 +34,28 @@ pyplot.figure(figsize=(10, 2))
 for test_condition in [0, 1, 2]:
     test_inputs = inputs * 1.0
 
-    size = test_inputs[:, 0:13]
+    size = test_inputs[:, 0:historic_samples]
     size = size.shape
     noise = ((numpy.random.random(size) * 2) - 1)
     noise = noise
 
-    if test_condition == 1: test_inputs[:, 0:13] = noise
-    if test_condition == 2: test_inputs[:, 13:] = noise
+    if test_condition == 1: test_inputs[:, 0:historic_samples] = noise
+    if test_condition == 2: test_inputs[:, historic_samples:] = noise
 
     prediction = network_model.predict(test_inputs)
+    # Feed the prediction to a proportional controller
+    prediction = Correction.run_corrections(prediction, predicted_samples=predicted_samples)
 
-    inputs0 = test_inputs[:, 0:13]
-    inputs1 = test_inputs[:, 13:]
-    predictions0 = prediction[:, 0:13]
-    predictions1 = prediction[:, 13:]
+    inputs0 = test_inputs[:, 0:historic_samples]
+    inputs1 = test_inputs[:, historic_samples:]
+    predictions0 = prediction[:, 0:predicted_samples]
+    predictions1 = prediction[:, predicted_samples:]
 
-    output0 = outputs[:, 0:13]
-    output1 = outputs[:, 13:]
+    output0 = outputs[:, 0:predicted_samples]
+    output1 = outputs[:, predicted_samples:]
 
-    input_x = numpy.arange(13) * 0.1
-    prediction_x = (numpy.arange(13) + 13) * 0.1
+    input_x = numpy.arange(historic_samples) * 0.1
+    prediction_x = (numpy.arange(predicted_samples) + historic_samples) * 0.1
 
     pyplot.subplot(1, 4, test_condition + 1)
     pyplot.plot(input_x, inputs0[selected_example, :], '.-', color=color1)
