@@ -27,7 +27,7 @@ def my_model():
     return full_model
 
 
-def wave(frequency=1, duration=10.0, fs=100, phase=0, plot=False):
+def wave(frequency=1, duration=10.0, fs=10, phase=0, plot=False):
     p = numpy.deg2rad(phase)
     points = numpy.arange(start=0, stop=duration, step=1 / fs)
     signal = 0.5 * numpy.sin(2 * numpy.pi * frequency * points + p)
@@ -73,8 +73,32 @@ def read_csv(filename, start, end):
 
     result = {'t': time_steps, 'x': Curve1, 'y': Curve2, 'tx': Curve3, 'ty': Curve4}
     result = pandas.DataFrame(result)
-    result['dx'] = result.x - result.tx
-    result['dy'] = result.y - result.ty
+
+    dx = result.x - result.tx
+    dy = result.y - result.ty
+
+    result['dx'] = dx
+    result['dy'] = dy
+
+    dx = dx - numpy.mean(dx)
+    dy = dy - numpy.mean(dy)
+    dx = dx / numpy.max(numpy.abs(dx))
+    dy = dy / numpy.max(numpy.abs(dy))
+
+    radians_x = numpy.arccos(dx)
+    derivative = numpy.gradient(dx)
+    radians_x[derivative > 0] = - radians_x[derivative > 0]
+    #radians_x = numpy.unwrap(radians_x)
+
+    radians_y = numpy.arccos(dy)
+    derivative = numpy.gradient(dy)
+    radians_y[derivative > 0] = - radians_y[derivative > 0]
+    #radians_y = numpy.unwrap(radians_y)
+
+    result['radians_x'] = radians_x
+    result['radians_y'] = radians_y
+
+
 
     return result
 
