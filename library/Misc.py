@@ -9,6 +9,10 @@ from scipy import signal
 from scipy.signal import windows
 from scipy.signal.windows import hamming
 
+def label(txt, x, y, c='black'):
+    ax = pyplot.gca()
+    pyplot.text(x, y, txt, color=c, horizontalalignment='center', verticalalignment='center', transform=ax.transAxes)
+
 
 def signal_ramp(n, percent):
     if percent > 49: percent = 49

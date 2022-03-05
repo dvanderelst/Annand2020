@@ -1,232 +1,438 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.26)  7 FEB 2022 10:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.4)  5 MAR 2022 14:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2018-04-01> patch level 5
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-08-27>
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
+\c@part=\count182
+\c@section=\count183
+\c@subsection=\count184
+\c@subsubsection=\count185
+\c@paragraph=\count186
+\c@subparagraph=\count187
+\c@figure=\count188
+\c@table=\count189
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/preprint/fullpage.sty
-Package: fullpage 1999/02/23 1.1 (PWD)
-\FP@margin=\skip43
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip44
-\bibsep=\skip45
+\bibhang=\skip49
+\bibsep=\skip50
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count88
+\c@NAT@ctr=\count190
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks16
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
 )
-(./main.aux)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2020/03/19 v4.46 (NLCT)
+
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/home/dieter/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/home/dieter/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+)
+\XKV@depth=\count191
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count192
+)
+\@glsmfirst=\toks19
+\@glsmrest=\toks20
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2019/09/27 v2.32 (NLCT)
+
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen141
+))
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count193
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count194
+\leftroot@=\count195
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count196
+\DOTSCASE@=\count197
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count198
+\c@MaxMatrixCols=\count199
+\dotsspace@=\muskip17
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
+\tag@help=\toks22
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
+\andhelp@=\toks23
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks24
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count271
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count272
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count273
+\FP@xia=\count274
+\FP@xib=\count275
+\FP@xfa=\count276
+\FP@xfb=\count277
+\FP@rega=\count278
+\FP@regb=\count279
+\FP@regs=\count280
+\FP@times=\count281
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count282
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks26
+\@dtl@tmpcount=\count283
+\dtl@tmplength=\skip54
+\dtl@sortresult=\count284
+\@dtl@numgrpsepcount=\count285
+\@dtl@datatype=\count286
+\dtl@codeA=\count287
+\dtl@codeB=\count288
+\@dtl@foreach@level=\count289
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/glossaries/base/glossaries-comp
+atible-307.sty
+Package: glossaries-compatible-307 2020/03/19 v4.46 (NLCT)
+)
+\gls@level=\count290
+\@gls@tmpb=\toks27
+\gls@tmplen=\skip55
+\glskeylisttok=\toks28
+\glslabeltok=\toks29
+\glsshorttok=\toks30
+\glslongtok=\toks31
+
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-hype
+rnav.sty
+Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-list
+.sty
+Package: glossary-list 2020/03/19 v4.46 (NLCT)
+\glslistdottedwidth=\skip56
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-long
+.sty
+Package: glossary-long 2020/03/19 v4.46 (NLCT)
+ (/home/dieter/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
+\LTleft=\skip57
+\LTright=\skip58
+\LTpre=\skip59
+\LTpost=\skip60
+\LTchunksize=\count291
+\LTcapwidth=\dimen150
+\LT@head=\box52
+\LT@firsthead=\box53
+\LT@foot=\box54
+\LT@lastfoot=\box55
+\LT@gbox=\box56
+\LT@cols=\count292
+\LT@rows=\count293
+\c@LT@tables=\count294
+\c@LT@chunks=\count295
+\LT@p@ftn=\toks32
+)
+\glsdescwidth=\skip61
+\glspagelistwidth=\skip62
+)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-supe
+r.sty
+Package: glossary-super 2020/03/19 v4.46 (NLCT)
+
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2020/02/02 v4.1g the supertabular environment
+\c@tracingst=\count296
+\ST@wd=\dimen151
+\ST@rightskip=\skip63
+\ST@leftskip=\skip64
+\ST@parfillskip=\skip65
+\ST@pageleft=\dimen152
+\ST@headht=\dimen153
+\ST@tailht=\dimen154
+\ST@pagesofar=\dimen155
+\ST@pboxht=\dimen156
+\ST@lineht=\dimen157
+\ST@prevht=\dimen158
+\ST@toadd=\dimen159
+\ST@dimen=\dimen160
+\ST@pbox=\box57
+))
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-tree
+.sty
+Package: glossary-tree 2020/03/19 v4.46 (NLCT)
+\glstreeindent=\skip66
+))
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count297
+\l__pdf_internal_box=\box58
+) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/home/dieter/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count89
-\scratchdimen=\dimen105
-\scratchbox=\box26
-\nofMPsegments=\count90
-\nofMParguments=\count91
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count92
-\MPscratchDim=\dimen106
-\MPnumerator=\count93
-\makeMPintoPDFobject=\count94
-\everyMPtoPDFconversion=\toks16
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+\scratchcounter=\count298
+\scratchdimen=\dimen161
+\scratchbox=\box59
+\nofMPsegments=\count299
+\nofMParguments=\count300
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count301
+\MPscratchDim=\dimen162
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
+\everyMPtoPDFconversion=\toks34
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+85.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/home/dieter/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 18.
+Overfull \hbox (15.50578pt too wide) in paragraph at lines 40--41
+\OT1/cmr/m/n/10.95 rem-i-nis-cent of \OT1/cmr/m/it/10.95 Etch-A-Sketch\OT1/cmr/
+m/n/10.95 , the fa-mous me-chan-i-cal draw-ing de-vice [Wikipedia
+ []
 
 [1
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<neural_network.pdf, id=12, 816.97824pt x 325.45074pt>
-File: neural_network.pdf Graphic file (type pdf)
-<use neural_network.pdf>
-Package pdftex.def Info: neural_network.pdf  used on input line 44.
-(pdftex.def)             Requested size: 469.75502pt x 187.1327pt.
+{/home/dieter/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<images/trial_1.pdf, id=13, 867.24pt x 216.81pt>
+File: images/trial_1.pdf Graphic file (type pdf)
+<use images/trial_1.pdf>
+Package pdftex.def Info: images/trial_1.pdf  used on input line 60.
+(pdftex.def)             Requested size: 360.0pt x 90.00093pt.
 
-[2 <./neural_network.pdf>]
-<neural_network_0.pdf, id=44, 650.43pt x 216.81pt>
-File: neural_network_0.pdf Graphic file (type pdf)
-<use neural_network_0.pdf>
-Package pdftex.def Info: neural_network_0.pdf  used on input line 60.
-(pdftex.def)             Requested size: 469.75502pt x 156.58939pt.
-<neural_network_1.pdf, id=45, 650.43pt x 216.81pt>
-File: neural_network_1.pdf Graphic file (type pdf)
-<use neural_network_1.pdf>
-Package pdftex.def Info: neural_network_1.pdf  used on input line 71.
-(pdftex.def)             Requested size: 469.75502pt x 156.58939pt.
-<neural_network_2.pdf, id=46, 650.43pt x 216.81pt>
-File: neural_network_2.pdf Graphic file (type pdf)
-<use neural_network_2.pdf>
-Package pdftex.def Info: neural_network_2.pdf  used on input line 80.
-(pdftex.def)             Requested size: 469.75502pt x 156.58939pt.
- [3 <./neural_network_0.pdf>] [4 <./neural_network_1.pdf> <./neural_network_2.p
-df
-
-pdfTeX warning: /usr/local/bin/pdflatex (file ./neural_network_2.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
->]
-<reanalysis.pdf, id=137, 361.35pt x 216.81pt>
-File: reanalysis.pdf Graphic file (type pdf)
-<use reanalysis.pdf>
-Package pdftex.def Info: reanalysis.pdf  used on input line 121.
-(pdftex.def)             Requested size: 469.75502pt x 281.85626pt.
- [5] [6 <./reanalysis.pdf>]
-<correlation.pdf, id=190, 462.52798pt x 346.89601pt>
-File: correlation.pdf Graphic file (type pdf)
-<use correlation.pdf>
-Package pdftex.def Info: correlation.pdf  used on input line 153.
-(pdftex.def)             Requested size: 469.75502pt x 352.33656pt.
- (./main.bbl [7] [8 <./correlation.pdf>]) [9]
-(./main.aux) ) 
+[2 <./images/trial_1.pdf>] [3] [4]
+<images/strength.pdf, id=70, 216.81pt x 216.81pt>
+File: images/strength.pdf Graphic file (type pdf)
+<use images/strength.pdf>
+Package pdftex.def Info: images/strength.pdf  used on input line 99.
+(pdftex.def)             Requested size: 180.0pt x 180.00848pt.
+ [5 <./images/strength.pdf>]
+<images/uncoupled.pdf, id=89, 722.7pt x 144.54pt>
+File: images/uncoupled.pdf Graphic file (type pdf)
+<use images/uncoupled.pdf>
+Package pdftex.def Info: images/uncoupled.pdf  used on input line 118.
+(pdftex.def)             Requested size: 360.0pt x 72.00073pt.
+ [6] [7 <./images/uncoupled.pdf>] [8] (./main.bbl)
+<images/trial_20.pdf, id=127, 867.24pt x 216.81pt>
+File: images/trial_20.pdf Graphic file (type pdf)
+<use images/trial_20.pdf>
+Package pdftex.def Info: images/trial_20.pdf  used on input line 162.
+(pdftex.def)             Requested size: 360.0pt x 90.00093pt.
+<images/trial_10.pdf, id=128, 867.24pt x 216.81pt>
+File: images/trial_10.pdf Graphic file (type pdf)
+<use images/trial_10.pdf>
+Package pdftex.def Info: images/trial_10.pdf  used on input line 170.
+(pdftex.def)             Requested size: 360.0pt x 90.00093pt.
+<images/trial_15.pdf, id=129, 867.24pt x 216.81pt>
+File: images/trial_15.pdf Graphic file (type pdf)
+<use images/trial_15.pdf>
+Package pdftex.def Info: images/trial_15.pdf  used on input line 179.
+(pdftex.def)             Requested size: 360.0pt x 90.00093pt.
+File: images/trial_20.pdf Graphic file (type pdf)
+<use images/trial_20.pdf>
+Package pdftex.def Info: images/trial_20.pdf  used on input line 186.
+(pdftex.def)             Requested size: 360.0pt x 90.00093pt.
+<images/ind.pdf, id=130, 867.24pt x 216.81pt>
+File: images/ind.pdf Graphic file (type pdf)
+<use images/ind.pdf>
+Package pdftex.def Info: images/ind.pdf  used on input line 193.
+(pdftex.def)             Requested size: 360.0pt x 90.00093pt.
+<images/dyad.pdf, id=131, 867.24pt x 216.81pt>
+File: images/dyad.pdf Graphic file (type pdf)
+<use images/dyad.pdf>
+Package pdftex.def Info: images/dyad.pdf  used on input line 201.
+(pdftex.def)             Requested size: 360.0pt x 90.00093pt.
+<images/explore.pdf, id=132, 867.24pt x 216.81pt>
+File: images/explore.pdf Graphic file (type pdf)
+<use images/explore.pdf>
+Package pdftex.def Info: images/explore.pdf  used on input line 209.
+(pdftex.def)             Requested size: 360.0pt x 90.00093pt.
+<images/coupled.pdf, id=133, 722.7pt x 144.54pt>
+File: images/coupled.pdf Graphic file (type pdf)
+<use images/coupled.pdf>
+Package pdftex.def Info: images/coupled.pdf  used on input line 218.
+(pdftex.def)             Requested size: 360.0pt x 72.00073pt.
+ [9 <./images/trial_20.pdf>] [10 <./images/trial_10.pdf> <./images/trial_15.pdf
+>] [11 <./images/ind.pdf> <./images/dyad.pdf> <./images/explore.pdf>] [12 <./im
+ages/coupled.pdf>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 1911 strings out of 492641
- 27072 string characters out of 6129315
- 94510 words of memory out of 5000000
- 5786 multiletter control sequences out of 15000+600000
- 8710 words of font info for 31 fonts, out of 8000000 for 9000
+ 6542 strings out of 478599
+ 98893 string characters out of 5853099
+ 461390 words of memory out of 5000000
+ 24310 multiletter control sequences out of 15000+600000
+ 409739 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,27p,900b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
-.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
-fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (9 pages, 352496 bytes).
+ 91i,6n,94p,1028b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/home/dieter/texlive/2021/texmf-dist/fonts/en
+c/dvips/cm-super/cm-super-ts1.enc}</home/dieter/texlive/2021/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb></home/dieter/texlive/2021/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></home/dieter/texlive/2021/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb></home/dieter/texlive/2021/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></home/dieter/texlive/2021/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi8.pfb></home/dieter/texlive/2021/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></home/dieter/texlive/2021/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr12.pfb></home/dieter/texlive/2021/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr17.pfb></home/dieter/texlive/2021/texmf-dist/font
+s/type1/public/amsfonts/cm/cmss10.pfb></home/dieter/texlive/2021/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmss12.pfb></home/dieter/texlive/2021/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></home/dieter/texlive/2021/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb></home/dieter/texlive/2021/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti10.pfb></home/dieter/texlive/2021/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmtt10.pfb></home/dieter/texlive/2021/texmf-dist
+/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main.pdf (12 pages, 681593 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
+ 398 PDF objects out of 1000 (max. 8388607)
+ 324 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
