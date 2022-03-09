@@ -27,7 +27,7 @@ def get_weight_mask(w=None, inverse=False, plot=False):
     return output_list
 
 
-class weight_constraint(tf.keras.constraints.Constraint):
+class WeightConstraint(tf.keras.constraints.Constraint):
     def __init__(self, apply=True):
         self.apply = apply
 

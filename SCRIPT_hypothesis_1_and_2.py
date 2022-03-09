@@ -24,7 +24,7 @@ explore = Misc.read_csv('digitize/explore.csv', 0, 120, fs=fs)
 
 sets = [data1, data5, data10, data15, data20, ind, dyad, explore]
 set_names = ['Trial 1', 'Trial 5', 'Trial 10', 'Trial 15', 'Trial 20', 'ind', 'dyad', 'explore']
-target_freqs = [0.19,0.19,0.19,0.19,0.19,0.38,0.19,0.19]
+target_freqs = [0.19, 0.19, 0.19, 0.19, 0.19, 0.38, 0.19, 0.19]
 phase_differences = []
 correlations_amp = []
 correlations_pha = []
@@ -45,7 +45,6 @@ for data, set_name, target_freq in zip(sets, set_names, target_freqs):
     _, _, psd_y = spectrogram(y, fs=fs, nperseg=nperseg, noverlap=noverlap, mode='psd')
     freqs, spectrogram_time, angle_y = spectrogram(y, fs=fs, nperseg=nperseg, noverlap=noverlap, mode='phase')
     spectrogram_time = spectrogram_time + min(data.t.values)
-
 
     freq_selection = freqs < max_freq
 
@@ -74,18 +73,16 @@ for data, set_name, target_freq in zip(sets, set_names, target_freqs):
     pyplot.legend(['$x_t$', '$y_t$'], loc='lower right')
     Misc.label('a', 0.05, 0.95)
 
-
     extent = [min(spectrogram_time), max(spectrogram_time), min(selected_freqs), max(selected_freqs)]
-
 
     pyplot.subplot(1, 4, 2)
     pyplot.imshow(psd_x, aspect='auto', extent=extent, origin='lower')
     # pyplot.contourf(t, selected_freqs, psd_x, cmap='jet')
-    pyplot.hlines(target_freq, min(spectrogram_time), max(spectrogram_time),colors='red')
+    pyplot.hlines(target_freq, min(spectrogram_time), max(spectrogram_time), colors='red')
     pyplot.ylabel('Frequency')
     pyplot.xlabel('Time (s)')
     pyplot.title('Magnitude spectrogram $x_t$')
-    Misc.label('b',  0.05, 0.95, c='white')
+    Misc.label('b', 0.05, 0.95, c='white')
 
     pyplot.subplot(1, 4, 3)
     pyplot.imshow(psd_y, aspect='auto', extent=extent, origin='lower')
@@ -104,7 +101,7 @@ for data, set_name, target_freq in zip(sets, set_names, target_freqs):
     pyplot.ylabel('Phase shift (degrees)')
     pyplot.xlabel('Time (s)')
     pyplot.title('Phase shift')
-    Misc.label('d', 0.05, 0.95,)
+    Misc.label('d', 0.05, 0.95, )
     pyplot.hlines(270, start, end, linestyles='--')
     pyplot.hlines(180, start, end, linestyles='--')
     pyplot.ylim(0, 360)

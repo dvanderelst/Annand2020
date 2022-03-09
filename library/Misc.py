@@ -1,13 +1,12 @@
 import numpy
 from matplotlib import pyplot
 import keras
-from keras.callbacks import EarlyStopping
-import tensorflow as tf
 import pandas
 from scipy.interpolate import interp1d
 from scipy import signal
 from scipy.signal import windows
 from scipy.signal.windows import hamming
+
 
 def label(txt, x, y, c='black'):
     ax = pyplot.gca()
@@ -26,6 +25,7 @@ def signal_ramp(n, percent):
     total = numpy.hstack((left, buffer, right))
     return total
 
+
 def my_model():
     full_model = keras.Sequential()
     input_layer = keras.layers.Dense(units=2, input_shape=(2,), activation='tanh')
@@ -34,7 +34,7 @@ def my_model():
 
     full_model.add(input_layer)
     # full_model.add(hidden_layer)
-    #full_model.add(output_layer)
+    # full_model.add(output_layer)
 
     loss = keras.losses.MeanSquaredError()
     full_model.compile('RMSprop', loss=loss)
@@ -54,7 +54,7 @@ def wave(frequency=1, duration=10.0, fs=10, phase=0, plot=False):
     return points, signal
 
 
-def waves(frequency=1,duration=10.0, phase0=False, offset=90):
+def waves(frequency=1, duration=10.0, phase0=False, offset=90):
     if not phase0: phase0 = numpy.random.randint(0, 360)
     p1, s1 = wave(frequency=frequency, duration=duration, phase=phase0)
     p2, s2 = wave(frequency=frequency, duration=duration, phase=phase0 + offset)
@@ -72,7 +72,7 @@ def scramble(array):
 
 def read_csv(filename, start, end, fs=10):
     data = pandas.read_csv(filename)
-    time_steps = numpy.arange(start, end, 1/fs)
+    time_steps = numpy.arange(start, end, 1 / fs)
 
     f1 = interp1d(data.x, data.Curve1, fill_value="extrapolate")
     Curve1 = f1(time_steps)
@@ -103,17 +103,15 @@ def read_csv(filename, start, end, fs=10):
     radians_x = numpy.arccos(dx)
     derivative = numpy.gradient(dx)
     radians_x[derivative > 0] = - radians_x[derivative > 0]
-    #radians_x = numpy.unwrap(radians_x)
+    # radians_x = numpy.unwrap(radians_x)
 
     radians_y = numpy.arccos(dy)
     derivative = numpy.gradient(dy)
     radians_y[derivative > 0] = - radians_y[derivative > 0]
-    #radians_y = numpy.unwrap(radians_y)
+    # radians_y = numpy.unwrap(radians_y)
 
     result['radians_x'] = radians_x
     result['radians_y'] = radians_y
-
-
 
     return result
 
@@ -151,7 +149,6 @@ def lag_finder(y1, y2, dt=0.1, plot=False):
     return mx_corr, rms, delay, corr
 
 
-
 def smooth_signal(signal, samples, window='box'):
     if window == 'box': w = windows.boxcar(samples)
     if window == 'han': w = windows.hann(samples)
@@ -161,8 +158,7 @@ def smooth_signal(signal, samples, window='box'):
     return smoothed
 
 
-
-def create_training_examples(frequency=3, input_samples=15, output_samples=15 , n = 250):
+def create_training_examples(frequency=3, input_samples=15, output_samples=15, n=250):
     inputs = []
     outputs = []
     total_samples = input_samples + output_samples

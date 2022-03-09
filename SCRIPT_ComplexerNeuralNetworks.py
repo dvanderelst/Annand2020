@@ -23,7 +23,7 @@ output_name = 'coupled'
 # %% Train Network
 
 network_model = keras.Sequential()
-constraint = NetworkFunctions.weight_constraint(apply_constraints)
+constraint = NetworkFunctions.WeightConstraint(apply_constraints)
 input_layer = keras.layers.Dense(units=predicted_samples * 2, input_shape=(historic_samples * 2,), activation='tanh', kernel_constraint=constraint)
 network_model.add(input_layer)
 network_model.compile('adam', loss=loss)
