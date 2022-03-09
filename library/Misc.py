@@ -7,9 +7,24 @@ import pandas
 from scipy.interpolate import interp1d
 from scipy import signal
 from scipy.signal import windows
+from scipy.signal.windows import hamming
+
+def label(txt, x, y, c='black'):
+    ax = pyplot.gca()
+    pyplot.text(x, y, txt, color=c, horizontalalignment='center', verticalalignment='center', transform=ax.transAxes)
 
 
-
+def signal_ramp(n, percent):
+    if percent > 49: percent = 49
+    length = int(numpy.floor((n * percent) / 100))
+    window = hamming(length * 2 + 1)
+    window = window - numpy.min(window)
+    window = window / numpy.max(window)
+    left = window[0:length + 1]
+    right = window[length:]
+    buffer = numpy.ones(n - 2 * left.size)
+    total = numpy.hstack((left, buffer, right))
+    return total
 
 def my_model():
     full_model = keras.Sequential()
@@ -55,9 +70,9 @@ def scramble(array):
     return array
 
 
-def read_csv(filename, start, end):
+def read_csv(filename, start, end, fs=10):
     data = pandas.read_csv(filename)
-    time_steps = numpy.arange(start, end, 0.1)
+    time_steps = numpy.arange(start, end, 1/fs)
 
     f1 = interp1d(data.x, data.Curve1, fill_value="extrapolate")
     Curve1 = f1(time_steps)
